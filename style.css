@@ -58,14 +58,14 @@ nav {
 }
 
 .logo a {
-    color: #fff;
+    color: #e0e0e0;
     text-decoration: none;
     font-family: 'Press Start 2P', cursive;
     font-size: 0.8rem;
 }
 
 .nav-links a {
-    color: #fff;
+    color: #e0e0e0;
     text-decoration: none;
     font-family: 'Press Start 2P', cursive;
     font-size: 0.8rem;
@@ -97,6 +97,7 @@ nav {
     font-size: 1.2rem;
     font-family: 'Press Start 2P', cursive !important;
     font-size: 0.9rem;
+    color: #e0e0e0;
 }
 
 /* 作品展示页样式 */
@@ -126,7 +127,7 @@ nav {
     margin-top: 1rem;
     font-size: 1.1rem;
     font-weight: normal;
-    color: #fff;
+    color: #e0e0e0;
 }
 
 /* Find Me页面样式 */
@@ -188,6 +189,7 @@ nav {
     font-size: 1.8rem;
     margin-bottom: 10px;
     text-align: center;
+    color: #e0e0e0;
 }
 
 .work-description {
@@ -197,9 +199,10 @@ nav {
 }
 
 .work-description p {
-    margin-bottom: 0.8rem; /* 减小段落间距 */
-    line-height: 1.5; /* 减小行高 */
-    font-size: 1rem; /* 稍微减小字体大小 */
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    color: #cccccc;
 }
 
 .work-description p:last-child {
