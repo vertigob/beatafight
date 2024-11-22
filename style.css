@@ -137,52 +137,35 @@ nav {
 }
 
 #findme h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     font-family: 'Press Start 2P', cursive !important;
-    font-size: 1rem;
+    font-size: 2.2rem;
 }
 
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 6rem;
+    gap: 8rem;
     margin-top: 2rem;
-}
-
-.social-links a {
-    text-align: center;
-    color: #fff;
-    text-decoration: none;
-}
-
-.social-links svg,
-.social-links span[style*="font-size: 50px"] {
-    margin-bottom: 1rem;
-}
-
-.social-links a {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-} 
+}
+
+.social-links .wechat svg {
+    width: 30px;
+    height: 30px;
+    transform: translateY(5px) !important;
+}
+
+.social-links .xiaohongshu img {
+    width: auto;
+    height: 20px;
+}
 
 /* 响应式设计 */
 @media (max-width: 768px) {
     .social-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-    }
-    
-    .nav-links a {
-        margin-left: 1rem;
-        font-size: 0.7rem;
-    }
-    .gallery-item h3 {
-        font-size: 1rem;
-    }
-    .logo a {
-        font-size: 0.8rem;
+        gap: 4rem;
+        margin-top: 1rem;
     }
 }
 
@@ -277,28 +260,32 @@ nav {
 
     .social-links {
         flex-direction: row;
-        gap: 3rem;
+        gap: 7rem;  /* 从6rem增加到7rem */
         margin-top: 1rem;
-        align-items: center;
+        align-items: flex-end;  /* 保持底部对齐 */
     }
 
-    .social-links img,
+    .social-links a {
+        display: flex;
+        align-items: flex-end;
+    }
+
     .social-links svg {
         width: 35px;
         height: 35px;
     }
 
-    .xiaohongshu div {
-        height: 35px !important;
+    /* 删除之前所有关于小红书图标的样式 */
+    .social-links .xiaohongshu div {
+        height: 35px;
+        display: flex;
+        align-items: flex-end;
     }
 
-    .xiaohongshu img {
-        height: 25px !important;
-    }
-
-    /* 移除之前的margin-top */
-    .xiaohongshu img {
-        margin-top: 0 !important;
+    .social-links .xiaohongshu img {
+        height: 25px;
+        width: auto;
+        margin: 0;
     }
 
     .signature {
@@ -307,8 +294,8 @@ nav {
     }
     
     #findme h2 {
-        font-size: 0.8rem;  /* 减小Find Me标题字体大小 */
-        margin-bottom: 1.5rem;  /* 减小标题底部间距 */
+        margin-bottom: 4rem;  /* 移动端也相应增加间距，从3rem到4rem */
+        font-size: 1.5rem;
     }
 
     .nav-links {
@@ -316,6 +303,15 @@ nav {
         transform: none;
         justify-content: flex-end;
         gap: 1rem;
+    }
+
+    .social-links .wechat svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .social-links .xiaohongshu img {
+        height: 20px;
     }
 } 
 
@@ -335,16 +331,4 @@ html {
     width: 50px !important;  /* 覆盖原有的 200px 宽度 */
     height: 50px !important;  /* 覆盖原有的 200px 高度 */
     margin-bottom: 1rem;
-} 
-
-/* 社交图标样式 */
-.social-links svg,
-.social-links span[style*="font-size: 50px"] {
-    margin-bottom: 1rem;
-}
-
-.social-links a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 } 
