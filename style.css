@@ -1,0 +1,341 @@
+/* 基础样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* 添加字体声明 */
+@font-face {
+    font-family: 'Cooper Black';
+    src: url('./fonts/CooperBlack.otf') format('opentype');
+    src: url('../fonts/CooperBlack.otf') format('opentype');
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 添加像素字体 */
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* 导航栏样式 */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(25, 25, 25, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* 修改导航链接的布局 */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    margin-left: auto;  /* 将链接推到右侧 */
+}
+
+.nav-links a:first-child {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);  /* Beat A Fight 居中 */
+}
+
+.nav-links a:last-child {
+    margin-right: 0;  /* Find Me 靠右 */
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8rem;
+}
+
+.logo a:hover {
+    opacity: 0.8;
+}
+
+/* 首页样式 */
+#home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo-container img {
+    max-width: 80%;
+    height: auto;
+}
+
+.signature {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Press Start 2P', cursive !important;
+    font-size: 0.9rem;
+}
+
+/* 作品展示页样式 */
+.gallery {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item h3 {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: #fff;
+}
+
+/* Find Me页面样式 */
+#findme {
+    min-height: 100vh;
+    padding: 12rem 2rem;
+    text-align: center;
+}
+
+#findme h2 {
+    margin-bottom: 2rem;
+    font-family: 'Press Start 2P', cursive !important;
+    font-size: 1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    margin-top: 2rem;
+}
+
+.social-links a {
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links svg,
+.social-links span[style*="font-size: 50px"] {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .nav-links a {
+        margin-left: 1rem;
+        font-size: 0.7rem;
+    }
+    .gallery-item h3 {
+        font-size: 1rem;
+    }
+    .logo a {
+        font-size: 0.8rem;
+    }
+}
+
+/* 作品详情页样式 */
+.work-detail {
+    padding-top: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px 20px;
+}
+
+.work-detail img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+.work-detail h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.work-description {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.work-description p {
+    margin-bottom: 0.8rem; /* 减小段落间距 */
+    line-height: 1.5; /* 减小行高 */
+    font-size: 1rem; /* 稍微减小字体大小 */
+}
+
+.work-description p:last-child {
+    margin-bottom: 0;
+}
+
+/* 让画廊中的链接继承颜色 */
+.gallery-item a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    /* 导航栏移动端样式 */
+    nav {
+        padding: 0.8rem;  /* 减小导航栏内边距 */
+    }
+
+    .nav-links a {
+        margin-left: 0.8rem;  /* 减小链接间距 */
+        font-size: 0.6rem;  /* 减小字体大小 */
+    }
+    
+    .logo a {
+        font-size: 0.6rem;  /* 减小logo字体大小 */
+    }
+
+    /* 画廊移动端样式 */
+    .gallery {
+        padding: 0.8rem;  /* 减小画廊内边距 */
+        gap: 0.8rem;  /* 减小图片间距 */
+    }
+
+    .gallery-item h3 {
+        font-size: 0.8rem;  /* 减小标题字体大小 */
+        margin-top: 0.5rem;  /* 减小标题上边距 */
+    }
+
+    /* 作品详情页移动端样式 */
+    .work-detail {
+        padding-top: 45px;
+    }
+    
+    .work-detail img {
+        padding: 0 8px;
+    }
+    
+    .work-description {
+        padding: 10px;
+    }
+
+    /* Find Me页面移动端样式 */
+    #findme {
+        padding: 15rem 1rem;  /* 从10rem增加到15rem */
+        margin-top: 4rem;
+    }
+
+    .social-links {
+        flex-direction: row;
+        gap: 3rem;
+        margin-top: 1rem;
+    }
+
+    .social-links img,
+    .social-links svg {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* 调整小红书图标的对齐 */
+    .xiaohongshu img {
+        margin-top: 12px !important;  /* 增加顶部边距以对齐底部 */
+    }
+
+    .signature {
+        font-size: 0.7rem;  /* 减小签名字体大小 */
+        margin-top: 0.8rem;  /* 减小签名上边距 */
+    }
+    
+    #findme h2 {
+        font-size: 0.8rem;  /* 减小Find Me标题字体大小 */
+        margin-bottom: 1.5rem;  /* 减小标题底部间距 */
+    }
+
+    .nav-links {
+        position: static;  /* 移动端取消居中定位 */
+        transform: none;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+} 
+
+/* 添加平滑滚动 */
+html {
+    scroll-behavior: smooth;
+} 
+
+/* 添加字体平滑效果 */
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} 
+
+/* 修改微信图标的样式 */
+.wechat img {
+    width: 50px !important;  /* 覆盖原有的 200px 宽度 */
+    height: 50px !important;  /* 覆盖原有的 200px 高度 */
+    margin-bottom: 1rem;
+} 
+
+/* 社交图标样式 */
+.social-links svg,
+.social-links span[style*="font-size: 50px"] {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
