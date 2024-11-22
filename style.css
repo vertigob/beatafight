@@ -279,6 +279,7 @@ nav {
         flex-direction: row;
         gap: 3rem;
         margin-top: 1rem;
+        align-items: flex-end;
     }
 
     .social-links img,
@@ -287,9 +288,9 @@ nav {
         height: 35px;
     }
 
-    /* 调整小红书图标的对齐 */
+    /* 移除之前的margin-top */
     .xiaohongshu img {
-        margin-top: 12px !important;  /* 增加顶部边距以对齐底部 */
+        margin-top: 0 !important;
     }
 
     .signature {
