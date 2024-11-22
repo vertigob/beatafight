@@ -279,13 +279,21 @@ nav {
         flex-direction: row;
         gap: 3rem;
         margin-top: 1rem;
-        align-items: flex-end;
+        align-items: center;
     }
 
     .social-links img,
     .social-links svg {
         width: 35px;
         height: 35px;
+    }
+
+    .xiaohongshu div {
+        height: 35px !important;
+    }
+
+    .xiaohongshu img {
+        height: 25px !important;
     }
 
     /* 移除之前的margin-top */
