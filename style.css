@@ -53,15 +53,15 @@ nav {
 .logo a {
     color: #e0e0e0;
     text-decoration: none;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 0.8rem;
+    font-family: 'Uranus', sans-serif !important;
+    font-size: 1.4rem;
 }
 
 .nav-links a {
     color: #e0e0e0;
     text-decoration: none;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 0.8rem;
+    font-family: 'Uranus', sans-serif !important;
+    font-size: 1.4rem;
 }
 
 .logo a:hover {
@@ -132,8 +132,9 @@ nav {
 
 #findme h2 {
     margin-bottom: 5rem;
-    font-family: 'Press Start 2P', cursive !important;
+    font-family: 'Uranus', sans-serif !important;
     font-size: 2.2rem;
+    text-transform: uppercase;
 }
 
 .social-links {
@@ -218,11 +219,11 @@ nav {
 
     .nav-links a {
         margin-left: 0.8rem;  /* 减小链接间距 */
-        font-size: 0.6rem;  /* 减小字体大小 */
+        font-size: 1rem;  /* 移动端字体也相应调大 */
     }
     
     .logo a {
-        font-size: 0.6rem;  /* 减小logo字体大小 */
+        font-size: 1rem;  /* 移动端字体也相应调大 */
     }
 
     /* 画廊移动端样式 */
@@ -272,7 +273,7 @@ nav {
         height: 35px;
     }
 
-    /* 删除之前所有关于小红书图标的样式 */
+    /* 删除前所有关于小红书图标的样式 */
     .social-links .xiaohongshu div {
         height: 35px;
         display: flex;
@@ -335,39 +336,43 @@ html {
     margin-top: 1rem;
     text-align: center;
     color: #e0e0e0;
+    padding: 0 1rem;
 }
 
-.signature {
-    font-family: 'Press Start 2P', cursive !important;
-    font-size: 0.9rem;
+.intro-text .signature {
+    font-family: 'Uranus', sans-serif;
+    font-size: 0.7rem !important;  /* 第一行小一点 */
     margin-bottom: 1rem;
+    color: #e0e0e0;
 }
 
-.description {
-    font-family: 'IPix', sans-serif;
-    font-size: 0.9rem;
+.intro-text .description {
+    font-family: 'Uranus', sans-serif;
+    font-size: 0.9rem !important;  /* 中间文字大一点 */
     line-height: 1.6;
     margin-bottom: 0.5rem;
+    color: #e0e0e0;
 }
 
-.tagline {
-    font-family: 'Press Start 2P', cursive !important;
-    font-size: 0.8rem;
+.intro-text .tagline {
+    font-family: 'Uranus', sans-serif;
+    font-size: 0.7rem !important;  /* 最后一行小一点 */
     margin-top: 1rem;
+    color: #e0e0e0;
 }
 
 /* 移动端适配 */
 @media screen and (max-width: 768px) {
-    .signature {
-        font-size: 0.7rem;
+    .intro-text .signature {
+        font-size: 0.6rem !important;
     }
     
-    .description {
-        font-size: 0.8rem;
+    .intro-text .description {
+        font-size: 0.8rem !important;
     }
     
-    .tagline {
-        font-size: 0.7rem;
+    .intro-text .tagline {
+        font-size: 0.6rem !important;
     }
 } 
 
