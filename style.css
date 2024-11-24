@@ -8,24 +8,17 @@
 body {
     background-color: #1a1a1a;
     color: #fff;
-    font-family: Arial, sans-serif;
+    font-family: 'Uranus', sans-serif;
     opacity: 1;
     transition: opacity 0.3s ease;
 }
 
-/* 添加字体声明 */
+/* 添加 Uranus Pixel 字体 */
 @font-face {
-    font-family: 'Cooper Black';
-    src: url('./fonts/CooperBlack.otf') format('opentype');
-    src: url('../fonts/CooperBlack.otf') format('opentype');
+    font-family: 'Uranus';
+    src: url('fonts/Uranus_Pixel_11Px.ttf') format('truetype');
     font-display: swap;
-    font-weight: normal;
-    font-style: normal;
 }
-
-/* 添加像素字体 */
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 /* 导航栏样式 */
 nav {
@@ -199,6 +192,7 @@ nav {
 }
 
 .work-description p {
+    font-family: 'IPix', sans-serif;
     margin-bottom: 0.8rem;
     line-height: 1.5;
     font-size: 1rem;
@@ -334,4 +328,70 @@ html {
     width: 50px !important;  /* 覆盖原有的 200px 宽度 */
     height: 50px !important;  /* 覆盖原有的 200px 高度 */
     margin-bottom: 1rem;
+} 
+
+/* 首页文字样式 */
+.intro-text {
+    margin-top: 1rem;
+    text-align: center;
+    color: #e0e0e0;
+}
+
+.signature {
+    font-family: 'Press Start 2P', cursive !important;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-family: 'IPix', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-family: 'Press Start 2P', cursive !important;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .signature {
+        font-size: 0.7rem;
+    }
+    
+    .description {
+        font-size: 0.8rem;
+    }
+    
+    .tagline {
+        font-size: 0.7rem;
+    }
+} 
+
+/* 更新所有字体相关的样式 */
+body {
+    font-family: 'Uranus', sans-serif;
+}
+
+.logo a, 
+.nav-links a {
+    font-family: 'Uranus', sans-serif !important;
+}
+
+.signature,
+.tagline,
+#findme h2 {
+    font-family: 'Uranus', sans-serif !important;
+}
+
+.description,
+.work-description p {
+    font-family: 'Uranus', sans-serif;
+}
+
+.gallery-item h3 {
+    font-family: 'Uranus', sans-serif;
 } 
