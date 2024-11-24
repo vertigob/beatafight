@@ -20,6 +20,13 @@ body {
     font-display: swap;
 }
 
+/* 添加 Cubic 字体 */
+@font-face {
+    font-family: 'Cubic';
+    src: url('fonts/Cubic_11_1.300_R.ttf') format('truetype');
+    font-display: swap;
+}
+
 /* 导航栏样式 */
 nav {
     position: fixed;
@@ -193,7 +200,7 @@ nav {
 }
 
 .work-description p {
-    font-family: 'IPix', sans-serif;
+    font-family: 'Cubic', sans-serif !important;
     margin-bottom: 0.8rem;
     line-height: 1.5;
     font-size: 1rem;
@@ -233,8 +240,8 @@ nav {
     }
 
     .gallery-item h3 {
-        font-size: 0.8rem;  /* 减小标题字体大小 */
-        margin-top: 0.5rem;  /* 减小标题上边距 */
+        font-size: 0.9rem;  /* 从0.8rem改为0.9rem */
+        margin-top: 0.5rem;
     }
 
     /* 作品详情页移动端样式 */
@@ -333,30 +340,30 @@ html {
 
 /* 首页文字样式 */
 .intro-text {
-    margin-top: 1rem;
+    margin-top: 3rem;
     text-align: center;
     color: #e0e0e0;
     padding: 0 1rem;
 }
 
 .intro-text .signature {
-    font-family: 'Uranus', sans-serif;
-    font-size: 0.7rem !important;  /* 第一行小一点 */
+    font-family: 'Cubic', sans-serif !important;
+    font-size: 0.8rem !important;
     margin-bottom: 1rem;
     color: #e0e0e0;
 }
 
 .intro-text .description {
-    font-family: 'Uranus', sans-serif;
-    font-size: 0.9rem !important;  /* 中间文字大一点 */
+    font-family: 'Cubic', sans-serif !important;
+    font-size: 0.9rem !important;
     line-height: 1.6;
     margin-bottom: 0.5rem;
     color: #e0e0e0;
 }
 
 .intro-text .tagline {
-    font-family: 'Uranus', sans-serif;
-    font-size: 0.7rem !important;  /* 最后一行小一点 */
+    font-family: 'Cubic', sans-serif !important;
+    font-size: 0.8rem !important;
     margin-top: 1rem;
     color: #e0e0e0;
 }
@@ -364,7 +371,7 @@ html {
 /* 移动端适配 */
 @media screen and (max-width: 768px) {
     .intro-text .signature {
-        font-size: 0.6rem !important;
+        font-size: 0.7rem !important;
     }
     
     .intro-text .description {
@@ -372,7 +379,7 @@ html {
     }
     
     .intro-text .tagline {
-        font-size: 0.6rem !important;
+        font-size: 0.7rem !important;
     }
 } 
 
@@ -394,7 +401,7 @@ body {
 
 .description,
 .work-description p {
-    font-family: 'Uranus', sans-serif;
+    font-family: 'Cubic', sans-serif !important;
 }
 
 .gallery-item h3 {
