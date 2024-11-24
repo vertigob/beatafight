@@ -103,7 +103,7 @@ nav {
 
 /* 作品展示页样式 */
 .gallery {
-    width: 94%;
+    width: 92%;
     margin: 0 auto;
     padding-top: 80px;
     gap: 3rem;
@@ -133,7 +133,7 @@ nav {
     color: #e0e0e0;
 }
 
-/* Find Me页面��式 */
+/* Find Me页面样式 */
 #findme {
     min-height: 100vh;
     padding: 15rem 2rem;
@@ -176,7 +176,7 @@ nav {
 
 /* 作品详情页样式 */
 .work-detail {
-    width: 94%;
+    width: 92%;
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 80px;
@@ -237,7 +237,7 @@ nav {
 
     /* 画廊移动端样式 */
     .gallery {
-        width: 94%;
+        width: 92%;
         margin: 0 auto;
         padding-top: 60px;
         gap: 2rem;
@@ -252,7 +252,7 @@ nav {
 
     /* 作品详情页移动端样式 */
     .work-detail {
-        width: 94%;
+        width: 92%;
         margin: 0 auto;
         padding-top: 60px;
     }
