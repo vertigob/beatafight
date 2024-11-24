@@ -223,16 +223,22 @@ nav {
 @media screen and (max-width: 768px) {
     /* 导航栏移动端样式 */
     nav {
-        padding: 0.8rem;  /* 减小导航栏内边距 */
+        padding: 0.8rem;
+    }
+
+    .nav-links {
+        position: static;  /* 移动端取消居中定位 */
+        transform: none;
+        justify-content: flex-end;
+        gap: 1rem;
     }
 
     .nav-links a {
-        margin-left: 0.8rem;  /* 减小链接间距 */
-        font-size: 1rem;  /* 移动端字体也相应调大 */
+        font-size: 1rem !important;  /* 从0.8rem改为1rem */
     }
     
     .logo a {
-        font-size: 1rem;  /* 移动端字体也相应调大 */
+        font-size: 1rem !important;  /* 从0.8rem改为1rem */
     }
 
     /* 画廊移动端样式 */
