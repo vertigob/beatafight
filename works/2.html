@@ -41,5 +41,17 @@
             <p>是闪手……他怎么会在这里!!!???</p>
         </div>
     </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // 重置所有导航链接的颜色
+        document.querySelectorAll('.nav-links a, .logo a').forEach(link => {
+            link.classList.remove('active');
+        });
+        
+        // 在详情页面中，让 BEAT A FIGHT 变色
+        document.querySelector('.nav-links a[href="../index.html#work"]').classList.add('active');
+    });
+    </script>
 </body>
 </html> 

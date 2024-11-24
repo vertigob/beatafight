@@ -38,5 +38,17 @@
             <p>一曲放罢，针头开始摩擦死蜡，在这无限循环的标志性低语中，果组的又一次逃亡要开始了。</p>
         </div>
     </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // 重置所有导航链接的颜色
+        document.querySelectorAll('.nav-links a, .logo a').forEach(link => {
+            link.classList.remove('active');
+        });
+        
+        // 在详情页面中，让 BEAT A FIGHT 变色
+        document.querySelector('.nav-links a[href="../index.html#work"]').classList.add('active');
+    });
+    </script>
 </body>
 </html> 

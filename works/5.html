@@ -55,5 +55,17 @@
             <p>"布!!!欧!!!你!!!大!!!爷!!!放开我，你个傻逼，我他妈是你韦登祖宗!!!!!!!!!!!!"</p>
         </div>
     </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // 重置所有导航链接的颜色
+        document.querySelectorAll('.nav-links a, .logo a').forEach(link => {
+            link.classList.remove('active');
+        });
+        
+        // 在详情页面中，让 BEAT A FIGHT 变色
+        document.querySelector('.nav-links a[href="../index.html#work"]').classList.add('active');
+    });
+    </script>
 </body>
 </html> 

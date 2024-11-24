@@ -58,5 +58,17 @@
             <p>"收到。中央控制管道已破坏，全舱陆续开启。埃文大哥，给我拽一个14-72的Cue点过来，我下去会会湮灭者！"</p>
         </div>
     </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // 重置所有导航链接的颜色
+        document.querySelectorAll('.nav-links a, .logo a').forEach(link => {
+            link.classList.remove('active');
+        });
+        
+        // 在详情页面中，让 BEAT A FIGHT 变色
+        document.querySelector('.nav-links a[href="../index.html#work"]').classList.add('active');
+    });
+    </script>
 </body>
 </html> 

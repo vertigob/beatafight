@@ -11,7 +11,7 @@
 <body>
     <!-- 导航栏 -->
     <nav>
-        <div class="logo"><a href="#home">VERTIGOB</a></div>
+        <div class="logo"><a href="#home" class="active">VERTIGOB</a></div>
         <div class="nav-links">
             <a href="#work">BEAT A FIGHT</a>
             <a href="#findme">FIND ME</a>
@@ -97,5 +97,41 @@
             </a>
         </div>
     </section>
+
+    <script>
+    // 更新导航栏active状态的函数
+    function updateNavActive() {
+        // 获取当前滚动位置
+        const scrollPosition = window.scrollY;
+        
+        // 获取各个section的位置
+        const homeSection = document.getElementById('home');
+        const workSection = document.getElementById('work');
+        const findmeSection = document.getElementById('findme');
+        
+        // 重置所有导航链接的颜色
+        document.querySelectorAll('.nav-links a, .logo a').forEach(link => {
+            link.classList.remove('active');
+        });
+        
+        // 根据滚动位置设置active类
+        if (findmeSection && scrollPosition >= findmeSection.offsetTop - 100) {
+            document.querySelector('.nav-links a[href="#findme"]').classList.add('active');
+        } else if (workSection && scrollPosition >= workSection.offsetTop - 100) {
+            document.querySelector('.nav-links a[href="#work"]').classList.add('active');
+        } else {
+            document.querySelector('.logo a').classList.add('active');
+        }
+    }
+
+    // 页面加载时执行
+    document.addEventListener('DOMContentLoaded', updateNavActive);
+
+    // 滚动时执行
+    window.addEventListener('scroll', updateNavActive);
+
+    // hash变化时执行
+    window.addEventListener('hashchange', updateNavActive);
+    </script>
 </body>
 </html> 

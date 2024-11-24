@@ -81,6 +81,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 60px;
 }
 
 .logo-container {
@@ -102,10 +103,12 @@ nav {
 
 /* 作品展示页样式 */
 .gallery {
-    padding: 2rem;
+    width: 94%;
+    margin: 0 auto;
+    padding-top: 80px;
+    gap: 3rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
 }
 
 .gallery-item img {
@@ -130,10 +133,10 @@ nav {
     color: #e0e0e0;
 }
 
-/* Find Me页面样式 */
+/* Find Me页面��式 */
 #findme {
     min-height: 100vh;
-    padding: 12rem 2rem;
+    padding: 15rem 2rem;
     text-align: center;
 }
 
@@ -173,30 +176,29 @@ nav {
 
 /* 作品详情页样式 */
 .work-detail {
-    padding-top: 60px;
+    width: 94%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 60px 20px 20px;
+    padding-top: 80px;
 }
 
 .work-detail img {
     width: 100%;
     height: auto;
-    margin-bottom: 10px;
-    padding: 0 20px;
+    margin: 0 auto 20px;
+    display: block;
 }
 
 .work-detail h1 {
     font-size: 1.8rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-align: center;
     color: #e0e0e0;
 }
 
 .work-description {
     width: 100%;
-    max-width: 1200px;
-    padding: 20px;
+    margin-bottom: 20px;
 }
 
 .work-description p {
@@ -235,31 +237,37 @@ nav {
 
     /* 画廊移动端样式 */
     .gallery {
-        padding: 0.8rem;  /* 减小画廊内边距 */
-        gap: 0.8rem;  /* 减小图片间距 */
+        width: 94%;
+        margin: 0 auto;
+        padding-top: 60px;
+        gap: 2rem;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .gallery-item h3 {
-        font-size: 0.9rem;  /* 从0.8rem改为0.9rem */
+        font-size: 0.9rem;
         margin-top: 0.5rem;
     }
 
     /* 作品详情页移动端样式 */
     .work-detail {
-        padding-top: 45px;
+        width: 94%;
+        margin: 0 auto;
+        padding-top: 60px;
     }
     
     .work-detail img {
-        padding: 0 8px;
+        width: 100%;
     }
     
     .work-description {
-        padding: 10px;
+        padding: 10px 0;
     }
 
     /* Find Me页面移动端样式 */
     #findme {
-        padding: 15rem 1rem;  /* 从10rem增加到15rem */
+        padding: 18rem 1rem;
         margin-top: 4rem;
     }
 
@@ -300,7 +308,7 @@ nav {
     
     #findme h2 {
         margin-bottom: 4rem;  /* 移动端也相应增加间距，从3rem到4rem */
-        font-size: 1.5rem;
+        font-size: 2rem;  /* 从1.8rem改为2rem */
     }
 
     .nav-links {
@@ -318,6 +326,14 @@ nav {
     .social-links .xiaohongshu img {
         height: 20px;
     }
+
+    #home {
+        padding-top: 40px;
+    }
+
+    .work-description p {
+        font-size: 0.9rem;
+    }
 } 
 
 /* 添加平滑滚动 */
@@ -325,7 +341,7 @@ html {
     scroll-behavior: smooth;
 } 
 
-/* 添加字体平滑效果 */
+/* 添加字体平滑效 */
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -340,7 +356,7 @@ html {
 
 /* 首页文字样式 */
 .intro-text {
-    margin-top: 3rem;
+    margin-top: 2rem;
     text-align: center;
     color: #e0e0e0;
     padding: 0 1rem;
@@ -406,4 +422,18 @@ body {
 
 .gallery-item h3 {
     font-family: 'Uranus', sans-serif;
+} 
+
+/* 导航栏基础样式 */
+.logo a, .nav-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-family: 'Uranus', sans-serif !important;
+    font-size: 1.4rem;
+}
+
+/* 当前页面对应的导航链接颜色 */
+.nav-links a.active,
+.logo a.active {
+    color: #b2de43 !important;
 } 

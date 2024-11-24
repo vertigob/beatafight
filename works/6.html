@@ -39,5 +39,17 @@
             <p>"哪儿还有怡康森林啊，伙计，那儿现在是埃舍尔力捧的超大坟冢！别琢磨了，ETH已经是一个传说了，如果他还活着，能眼睁睁地看着埃舍尔连屠贾哈科四镇吗？你还是先下去把酒拿上来吧，就达可布这脾气和叁铎人这酒量，再过一会儿八成又要洗管子喽~"</p>
         </div>
     </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // 重置所有导航链接的颜色
+        document.querySelectorAll('.nav-links a, .logo a').forEach(link => {
+            link.classList.remove('active');
+        });
+        
+        // 在详情页面中，让 BEAT A FIGHT 变色
+        document.querySelector('.nav-links a[href="../index.html#work"]').classList.add('active');
+    });
+    </script>
 </body>
 </html> 
